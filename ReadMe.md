@@ -11,4 +11,4 @@ Website of a small family printing company called Print it.
 Project is created with:
 * HTML
 * CSS
-* JAVASCRIPT
+* Javascript
