@@ -23,10 +23,14 @@ const nextSlide = document.querySelector(".arrow_right");
 let slidesCount = slides.length - 1;
 let number = 0;
 let dots = document.querySelectorAll(".dot");
-console.log(dots);
 
-//prevSlide.addEventListener("click", changeSlide(-1));
-//nextSlide.addEventListener("click", changeSlide(1));
+//On lie les évènements aux flèches
+prevSlide.addEventListener("click", function() {
+	changeSlide(-1);
+});
+nextSlide.addEventListener("click", function() {
+	changeSlide(1);
+});
 
 //Sans action, on chage de slide toutes les 3 secondes
 let intervalId = setInterval("changeSlide(1)", 3000);
